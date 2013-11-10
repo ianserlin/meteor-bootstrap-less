@@ -5,6 +5,7 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
+  api.use('less');
   api.use('jquery');
   api.add_files(path.join('lib', 'less', 'alerts.lessimport'), 'server');
   api.add_files(path.join('lib', 'less', 'badges.lessimport'), 'server');
